@@ -1,0 +1,153 @@
+body {
+    background-image: url(../imagens/mosaico2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    font-family: 'Special Elite', cursive;
+    color: #000000;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+    /* autura da janela total  height: 100vh; */
+}
+
+.cartao {
+    background-color: #ffffff;
+    width: 500px;
+    border: 10px ridge #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* alingn-intems;center=  alinha horizontalmente por causa do flex direction */
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img {
+    border-radius: 50%;
+    border: 10px double #313131;
+    width: 180px;
+    box-shadow: 20px -10px 5px 0 rgb(130, 130, 130);
+    border-color: #000000;
+}
+
+.cartao .minhas-informacoes .nome {
+    font-size: 20px;
+}
+
+.cartao .minhas-informacoes .cargo {
+    font-size: 16px;
+    color: #000000;
+}
+
+.cartao .conteudo {
+
+    margin-top: 15px;
+    color: #ffffff;
+    font-family: 'Special Elite', cursive;
+}
+
+.cartao .abas {
+    display: flex;
+
+}
+
+.cartao .abas .aba {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0. 2s ease-in-out;
+}
+
+.cartao .abas img {
+    width: 60px;
+
+}
+
+.cartao .abas .aba.selecionado {
+    background-color: #262626;
+}
+
+.cartao .informacoes-aba {
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover {
+    background-color: #414141;
+}
+
+.informacoes-aba .informacao {
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-aba .informacao.selecionado {
+    display: block;
+}
+
+.informacoes-aba .sub-titulo {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes-aba .descricao {
+    font-size: 20px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.informacoes-aba .descricao span {
+    color: #757877;
+
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow: auto;
+}
+
+.redes-sociais li a {
+    background-color: red;
+    width: 250px;
+    display: block;
+    color: #0d0c0c;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3 s ease-in-out;
+}
+
+.redes-sociais li a:hover {
+    opacity: 0.8;
+
+}
+
+.redes-sociais .curriculo {
+    background-color: #076d6d;
+}
+
+.redes-sociais .linkdin {
+    background-color: #1d87bd;
+}
+
+.redes-sociais .github {
+    background-color: #545454;
+}
